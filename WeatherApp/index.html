@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App using API</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- weather card -->
+     <div class="weather-card">
+       <h1 class="app-title">Weather App</h1>
+     </div>
+    <!-- Search box -->
+     <div class="search-box">
+       <input type="text" id="city" placeholder="Enter your city...">
+       <button onclick="getWeather()">🔍</button>
+     </div>
+    <!-- weather info section -->
+     <div id="weather-info" class="hidden">
+       <h2 id="city-name"></h2>
+       <img id="weather-icon" alt="weather-icon">
+       <p id="description"></p>
+       <div class="weather-details">
+         <p>🌡️<span id="Temperature"></span></p>
+         <p>💧<span id="Humidity"></span></p>
+         <p>💨<span id="Wind-speed"></span></p> 
+       </div>
+     </div>
+    <!-- Error message  -->
+     <p id="error" class="hidden"></p>
+  </div>
+  <!-- JS File -->
+   <script src="JS/script.js"></script>
+</body>
+</html>
