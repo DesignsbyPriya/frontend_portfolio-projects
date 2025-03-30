@@ -1,23 +1,102 @@
-*{
+/* General Styling */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Body styling */
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f3f3f3;
+    background-color: #000075;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
+/* Container */
 .container{
     width: 90%;
     max-width: 1000px;
-    background-color: #009459;
+    background-color: #fff;
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
 
+/* Product Section */
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-image{
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.product-image img{
+    width: 75%;
+    border-radius: 10px;
+}
+
+/* Product-details */
+.product-details{
+    flex: 1 1 50%;
+}
+
+.product-details h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-details p{
+    margin: 10px 0;
+}
+
+.price{
+    font-size: 20px;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+/* Options */
+.product-options{
+    margin: 15px 0;
+}
+
+.product-options label{
+    font-weight: bold;
+}
+
+select{
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Button Styles */
+button{
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #2980b9;
+}
+
+/* cart-message */
+#cart-message{
+   margin-top: 15px;
+   font-weight: bold;
+   color: #27ae60; 
 }
