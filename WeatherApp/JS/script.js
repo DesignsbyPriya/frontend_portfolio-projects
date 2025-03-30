@@ -1,5 +1,5 @@
 // Open Weather API 
-const API = "e009a3655489a101d77c46eefdce96c4";
+const API = CONFIG.WEATHER_API_KEY;
 
 // Get Elements
 const cityInput = document.getElementById("city");
@@ -28,7 +28,7 @@ async function getWeather(city = "Delhi"){
       return;
     }
 
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}&units=metric`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${India}&appid=${API}&units=metric`;
 
     try{
         const response = await fetch(apiUrl);

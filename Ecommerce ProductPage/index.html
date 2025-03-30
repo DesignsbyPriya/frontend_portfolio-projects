@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="stylesheet" href="CSS/product_page.css">
+</head>
+<body>
+    <div class="container">
+      <!-- product -->
+       <div class="product">
+        <!-- Product image -->
+         <div class="product-image">
+            <img src="./product-image/maxidress.jpg" alt="product Image" id="product-img">
+         </div>
+        <!-- Product details -->
+         <div class="product-details">
+            <h2 id="product-title">Women's Floral Maxi dress</h2>
+            <p id="product-description">Embrace timeless elegance with this stunning floral maxi dress. Crafted from lightweight chiffon fabric, it features a
+            flowy silhouette, a flattering V-neckline, and delicate ruffle detailing.</p>
+            <p class="product-price">₹1999</p>
+         </div>
+        <!-- Product Size -->
+         <div class="product-options">
+            <label for="product-size">Size: </label> 
+            <select name="product-size" id="size">
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="extra-lg">XL</option>
+            </select>
+         </div>
+        <!-- Product Color -->
+         <div class="product-color">
+            <label for="product-colors">Available Colors: </label>
+            <select name="product-colors" id="color">
+               <option value="blue">Blue</option>
+               <option value="pink">Pink</option>
+               <option value="green">Green</option>
+               <option value="yellow">Yellow</option>  
+            </select>
+         </div>
+        
+        <!-- Add to cart button -->
+         <button onclick="addToCart()">Add to Cart</button>
+         <p id="cart-message"></p>
+       </div>
+    </div>
+    <!-- JS Folder -->
+     <script src="JS/product_page.js"></script>
+</body>
+</html>
